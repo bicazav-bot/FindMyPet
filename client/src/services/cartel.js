@@ -87,7 +87,7 @@ export async function generarCartel(p) {
   doc.setTextColor(120, 120, 140);
   doc.setFontSize(9);
   doc.setFont('helvetica', 'normal');
-  doc.text(`Publicado en FindMyPet · ${window.location.origin}${import.meta.env.BASE_URL}publicaciones/${p.id}`, ancho / 2, 290, { align: 'center' });
+  doc.text(`Publicado en FindMyPet · ${window.location.origin}/publicaciones/${p.id}`, ancho / 2, 290, { align: 'center' });
 
   doc.save(`cartel-${(p.nombreAnimal || 'mascota').toLowerCase().replace(/\s+/g, '-')}.pdf`);
 }
