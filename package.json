@@ -1,0 +1,12 @@
+{
+  "name": "findmypet",
+  "private": true,
+  "description": "FindMyPet - Grupo 4 UNEMI",
+  "scripts": {
+    "instalar": "npm install --prefix server && npm install --prefix client",
+    "local": "node scripts/local.js",
+    "local:reiniciar": "node scripts/local.js --reiniciar",
+    "probar": "node scripts/local.js --probar",
+    "build": "npm run build --prefix client"
+  }
+}
