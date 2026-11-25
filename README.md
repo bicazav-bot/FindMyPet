@@ -93,8 +93,7 @@ cd server && npm test
 - **Backend:** Render → New → Blueprint con `render.yaml`, o Web Service con raíz `server`, build `npm install`,
   start `npm run start:prod`. Variables: `DATABASE_URL`, `JWT_SECRET`, `FRONTEND_URL`, `CORS_ORIGIN`, `GEMINI_API_KEY` (opcional).
   Para cargar los datos de demostración, ejecutar una vez `npm run seed` desde la *Shell* de Render.
-- **Frontend:** GitHub Pages → se publica solo con el flujo `.github/workflows/pages.yml` en cada cambio a `main` (Settings → Pages → Source: GitHub Actions). En Settings → Secrets and variables → Actions → Variables, crear `VITE_API_URL` con la URL del backend. Dirección: https://bicazav-bot.github.io/FindMyPet/
-- **Alternativa:** Vercel → importar el repositorio con raíz `client`, framework Vite y la misma variable `VITE_API_URL`.
+- **Frontend:** Vercel → importar el repositorio con raíz `client`, framework Vite, variable `VITE_API_URL` = URL del backend.
 
 ## Variables de entorno
 Ver `server/.env.example` y `client/.env.example`. Sin `GEMINI_API_KEY` la plataforma funciona igual: las coincidencias
