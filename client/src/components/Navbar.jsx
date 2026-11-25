@@ -10,7 +10,7 @@ const claseEnlace = ({ isActive }) =>
 export function Logo({ grande = false }) {
   return (
     <span className={`flex items-center gap-2 font-extrabold ${grande ? 'text-3xl' : 'text-xl'}`}>
-      <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" className={grande ? 'h-11 w-11' : 'h-8 w-8'} />
+      <img src="/favicon.svg" alt="" className={grande ? 'h-11 w-11' : 'h-8 w-8'} />
       <span>Find <span className="text-violeta">MyPet</span></span>
     </span>
   );
